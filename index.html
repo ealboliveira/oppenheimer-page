@@ -7,6 +7,113 @@
     <link rel="stylesheet" href="dist/css/main.css">
 </head>
 <body>
-    <h1>h1</h1>
+
+    <header class="header">
+        <div class="header__container">
+            <h1>
+                <img class="header__logo" src="./src/img/logo.png" alt="">
+            </h1>
+            <ul class="header__links">
+                <li class="header__links__item">
+                    <a href="#" class="button button--secondary">Home</a>
+                </li>
+                <li class="header__links__item">
+                    <a href="#" class="button button--dark">Ingresso</a>
+                </li>
+                <li class="header__links__item">
+                    <a href="#" class="button button--dark">Trailer</a>
+                </li>
+            </ul>
+        </div>
+    </header>
+
+    <section class="hero">
+            <h1>OPPENHEIMER</h1>
+        <div class="button-container">
+            <a href="#" class="button">Compre seu Ingresso      ></a>
+            <a href="#" class="button">Ver trailer      ></a>
+        </div>
+    </section>
+
+    <section class="ingresso">
+        <div class="ingresso__container">
+            <h2 class="ingresso__title">Compre Ingresso</h2>
+    
+            <p class="ingresso__description">
+                Insira a quantidade de ingressos desejada e clique em "Comprar" para garantir seu lugar.
+            </p>
+    
+            <form action="#" method="post" class="ingresso__form">
+                <div class="ingresso__form-group">
+                    <label for="quantidadeIngressos" class="ingresso__label">Quantidade de Ingressos:</label>
+                    <input type="number" id="quantidadeIngressos" name="quantidadeIngressos" class="ingresso__input" min="1" value="1">
+                </div>
+    
+                <button type="submit" class="button button--primary ingresso__button">Comprar Ingresso</button>
+            </form>
+        </div>
+    </section>
+    
+    
+
+    <section class="trailer">
+        <div class="trailer__container">
+            <h2 class="title">Trailers</h2>
+    
+            <!-- Primeiro Trailer -->
+            <div class="trailer__item">
+                <h3 class="trailer__title">Trailer 1</h3>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/bK6ldnjE3Y0?si=AxuIBAqyc8YcJKTk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+    
+            <!-- Segundo Trailer -->
+            <div class="trailer__item">
+                <h3 class="trailer__title">Trailer 2</h3>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/F3OxA9Cz17A?si=2T_HKZFsjVT4WdcM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+    
+            <!-- Adicione mais trailers conforme necessário -->
+    
+        </div>
+    </section>
+    
+
+    <footer class="footer">
+        <div class="footer__container">
+            <img class="footer__logo" src="./src/img/logo.png" alt="thomas shebly">
+            <ul class="footer__links">
+                <li class="footer__links__item">
+                    <div class="language-selector">
+                        <img src="./src/img/globe.png" alt="Globo do mundo">
+                        <select>
+                            <option>English</option>
+                            <option selected>Português</option>
+                        </select>
+                    </div>
+                </li>
+                <li class="footer__links__item">
+                    <a href="#" class="text--small">Termos e Condições de Uso</a>
+                </li>
+                <li class="footer__links__item">
+                    <a href="" class="text--small">Política de privacidade</a>
+                </li>
+                <li class="footer__links__item">
+                    <a href="#" class="text--small">Ajuda</a>
+                </li>
+                <li class="footer__links__item">
+                    <a href="" class="text--small">Sobre Universal</a>
+                </li>
+            </ul>
+            <p class="text--small">
+                ©2023 UNIVERSAL PICTURES. TODOS OS DIREITOS RESERVADOS.
+            </p>
+
+        </div>
+    </footer>
+
+
+
+
+        
 </body>
 </html>
