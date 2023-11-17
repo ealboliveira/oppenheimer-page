@@ -1,8 +1,9 @@
 @use 'variaveis';
 
 .footer {
+    background-color: black;
+    box-shadow: 0 0 20px rgba(255, 165, 0, 0.7);
     padding: 26px 8px;
-    background-color: variaveis.$corFundo;
     color: variaveis.$corTexto1;
 
     &__container {

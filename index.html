@@ -7,77 +7,43 @@
     <link rel="stylesheet" href="dist/css/main.css">
 </head>
 <body>
-
-    <header class="header">
-        <div class="header__container">
-            <h1>
-                <img class="header__logo" src="./src/img/logo.png" alt="">
-            </h1>
-            <ul class="header__links">
-                <li class="header__links__item">
-                    <a href="#" class="button button--secondary">Home</a>
-                </li>
-                <li class="header__links__item">
-                    <a href="#" class="button button--dark">Ingresso</a>
-                </li>
-                <li class="header__links__item">
-                    <a href="#" class="button button--dark">Trailer</a>
-                </li>
-            </ul>
-        </div>
-    </header>
-
     <section class="hero">
-            <h1>OPPENHEIMER</h1>
-        <div class="button-container">
-            <a href="#" class="button">Compre seu Ingresso      ></a>
-            <a href="#" class="button">Ver trailer      ></a>
+        <div class="hero__imagem">
+            <img src="./src/img/nolam.png" alt="um filme dirigido por nolam">
+            <img src="./src/img/oppenheimer.png" alt="oppenheimer">
+        </div>
+        <div class="hero__button">
+            <a href="#" class="button">Compre Ingresso ></a>
+            <a href="#" class="button">Ver trailer ></a>
         </div>
     </section>
-
+    <section class="trailer">
+        <div class="trailer__container">
+            <h2 class="title">Trailers</h2>
+            <div class="trailer__item">
+                <h3 class="trailer__title">Trailer 1</h3>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/bK6ldnjE3Y0?si=AxuIBAqyc8YcJKTk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                <h3 class="trailer__title">Trailer 2</h3>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/F3OxA9Cz17A?si=2T_HKZFsjVT4WdcM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>  
+        </div>
+    </section>
     <section class="ingresso">
+        <img src="./src/img/ingresso.png" alt="">
         <div class="ingresso__container">
             <h2 class="ingresso__title">Compre Ingresso</h2>
-    
             <p class="ingresso__description">
                 Insira a quantidade de ingressos desejada e clique em "Comprar" para garantir seu lugar.
             </p>
-    
             <form action="#" method="post" class="ingresso__form">
                 <div class="ingresso__form-group">
                     <label for="quantidadeIngressos" class="ingresso__label">Quantidade de Ingressos:</label>
                     <input type="number" id="quantidadeIngressos" name="quantidadeIngressos" class="ingresso__input" min="1" value="1">
                 </div>
-    
                 <button type="submit" class="button button--primary ingresso__button">Comprar Ingresso</button>
             </form>
         </div>
     </section>
-    
-    
-
-    <section class="trailer">
-        <div class="trailer__container">
-            <h2 class="title">Trailers</h2>
-    
-            <!-- Primeiro Trailer -->
-            <div class="trailer__item">
-                <h3 class="trailer__title">Trailer 1</h3>
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/bK6ldnjE3Y0?si=AxuIBAqyc8YcJKTk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-            </div>
-    
-            <!-- Segundo Trailer -->
-            <div class="trailer__item">
-                <h3 class="trailer__title">Trailer 2</h3>
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/F3OxA9Cz17A?si=2T_HKZFsjVT4WdcM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-            </div>
-    
-            <!-- Adicione mais trailers conforme necessário -->
-    
-        </div>
-    </section>
-    
-
     <footer class="footer">
         <div class="footer__container">
             <img class="footer__logo" src="./src/img/logo.png" alt="thomas shebly">
@@ -107,13 +73,8 @@
             <p class="text--small">
                 ©2023 UNIVERSAL PICTURES. TODOS OS DIREITOS RESERVADOS.
             </p>
-
         </div>
-    </footer>
-
-
-
-
-        
+    </footer>      
+    <script src="src/scripts/main.js"></script>  
 </body>
 </html>
